@@ -4,4 +4,4 @@
 
 # PowerShell 
 
-This is my collection of PowerShell scripts I have written through my PowerShell learning journey. 
+This is my collection of PowerShell scripts I have written through my PowerShell journey. 
