@@ -1,4 +1,4 @@
-#Parameters get passed by pipelines 
+#Parameters get passed by pipeline templates
 param(
     $username = "",
     $password = "",
