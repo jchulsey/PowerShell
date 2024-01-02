@@ -1,3 +1,4 @@
+# Parameters are passed by Pipeline templates
 param(
     $serverList = "",
     $username = "",
