@@ -1,4 +1,4 @@
-#The parameters get passed by a YAML template
+# The parameters get passed by a YAML template
 param(
     $username = "",
     $password = "",
@@ -11,6 +11,10 @@ $a = 0
 
 $password = ConvertTo-SecureString $password -AsPlainText -Force
 $basicCreds = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList($username, $password)
+
+#####################################
+# Loop through each server and reboot
+#####################################
 
 foreach ($computer in $computers) {
     $a++
