@@ -1,2 +1,2 @@
 # PowerShell
-Reusable PowerShell scripts
+Reusable PowerShell scripts for use with YAML pipelines
