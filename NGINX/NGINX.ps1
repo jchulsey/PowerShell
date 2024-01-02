@@ -1,4 +1,4 @@
-#Parameters are passed in pipeline templates
+# The parameters get passed by a YAML template
 param(
     $username = "",
     $password = "",
@@ -10,7 +10,7 @@ param(
     $serverGroup = ""
 )
 
-#Force TLS 1.2
+# Force TLS 1.2
 [Net.ServicePointManager]::SecurityProtocol = [NetSecurityProtocolType]::Tls12
 
 $password   = ConvertTo-SecureString $password -AsPlainText -Force
@@ -29,7 +29,7 @@ if ($actionType -eq "Online") {
 }
 
 ######################
-#Drain / Online nodes
+# Drain / Online nodes
 ######################
 
 $url = ""
@@ -47,10 +47,10 @@ foreach ($instance in $nginxInstanceNames.Split(",", [System.StringSplitOptions]
     }
 }
 
-#Give traffic a minute to bleed off
+# Give traffic a minute to bleed off
 Start-Sleep -s 60
 
-#Take drained nodes down
+# Take drained nodes down
 foreach ($url in $takeDownUrls) {
     $httpQuery = $object = $null
 
@@ -73,5 +73,5 @@ foreach ($url in $takeDownUrls) {
     }
 }
 
-#Report in grid view
+# Report in grid view
 $report | Format-Table
