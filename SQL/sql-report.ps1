@@ -1,4 +1,4 @@
-#Parameters get passed by pipeline templates
+# The parameters get passed by a YAML template
 param(
     $username = "",
     $password = "",
@@ -13,7 +13,7 @@ $basicCreds = New-Object -TypeName System.Management.Automation.PSCredential -Ar
 $date  = Get-Date -Format MMyy
 
 #####################################
-#Insert your query between the quotes
+# Insert your query between the quotes
 #####################################
 $query = ""
 
