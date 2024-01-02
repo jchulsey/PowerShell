@@ -1,4 +1,4 @@
-# Parameters are passed in pipeline templates
+# The parameters get passed by a YAML template
 param(
     $username = "",
     $password = "",
