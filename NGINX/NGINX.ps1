@@ -3,11 +3,10 @@ param(
     $username = "",
     $password = "",
     $nginxInstanceNames = "",
-    $nginxInstanceNumbers = "",
     $actionType = "",
     $nginxApiVersion = "",
     $nginxInstancePort = "",
-    $serverGroup = ""
+    $serverNumbers = ""
 )
 
 # Force TLS 1.2
