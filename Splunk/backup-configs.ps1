@@ -1,3 +1,4 @@
+# The parameters get passed by a YAML template
 param(
     $serverList = "",
     $username = "",

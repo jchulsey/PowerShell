@@ -1,3 +1,4 @@
+# The parameters get passed by a YAML template
 param(
     $username = "",
     $password = "",
@@ -12,6 +13,9 @@ $basicCreds = New-Object -TypeName System.Management.Automation.PSCredential -Ar
 $amount       = $computers.count
 $a            = 0
 
+######################################################
+# Loop through each server and enable / disable Puppet
+######################################################                
 foreach ($computer in $serverList) {
     $a++
 
